@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Number Guessing Game</h1>
+        <p class="instructions">Guess the secret number between 1 and 100!</p>
+        
+        <div class="game-area">
+            <div class="input-group">
+                <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess">
+                <button id="submitBtn">Submit Guess</button>
+            </div>
+            <p class="attempts">Attempts: <span id="attemptCount">0</span></p>
+            <div id="messageArea" class="message"></div>
+            <button id="restartBtn" class="restart-btn" style="display: none;">🔄 Restart Game</button>
+        </div>
+        
+        <div class="mode-toggle">
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </div>
+    
+    <!-- Optional sound effects -->
+    <audio id="winSound" src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAo"></audio>
+    <audio id="loseSound" src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAo"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
